@@ -1,0 +1,86 @@
+// @import "../../public/css/styles.min.css";
+@import "../style/variable.scss";
+
+.card{
+    margin-top: 1rem;
+    width: 12.7rem;
+    background-color: burlywood;
+}
+
+.card-image{
+    height: 10rem;
+    width: 10rem;
+}
+
+body{
+    // background-color: rgb(67, 241, 233) !important;
+    background-color: $body-background;
+}
+
+.card-title{
+    padding-left: 0.1px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.btn btn-info{
+margin-top: 2%;
+}
+
+
+.btn-info{
+    margin-top: 5%;
+}
+
+nav{
+    background-color: beige;
+    margin-top: 2%;
+}
+
+ul.leftbar li span{
+    margin-right: 2%;
+    font-weight: bold;
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $button-background;
+    
+  }
+
+
+.modal-body{
+    // background-color: lightgrey;
+    background-color: $modal-background;
+}
+
+.h4Class{
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h3Class{display: block;
+font-size: 1em;
+margin-top: .25em;
+margin-bottom: .25em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+
+.btnColor {
+    background-color:$button-background;
+}
