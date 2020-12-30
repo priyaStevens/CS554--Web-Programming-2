@@ -1,0 +1,111 @@
+ul.leftnav li span.lableClass{
+    margin-right: 2%;
+    font-weight: bold;
+    color: back;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+ul.leftnav li span.valueClass{
+    margin-right: 2%;
+    font-weight: bold;
+    color: blue;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.leftnav li img{
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    margin-top: 2%;
+    /* margin-left: 5%; */
+    font-family: Arial;
+    background-color:	#f7cfd5;
+  }
+
+  .search{
+      background-color: black;
+  }
+
+  section{
+      margin-left: 5%;
+  }
+  
+  .example{
+      margin-left: 5%;
+  }
+
+  .errorDiv{
+      color: red;
+      font:bold;
+  }
+
+  .h4Class{
+    color: #333;
+    font-size: 15px;
+    color: red;
+  }
+
+  ol ul.leftnav li span.lablesearchClass{
+    margin-right: 2%;
+    font-weight: bold;
+    color: back;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+ul.leftnav li span.valueSearchClass{
+    margin-right: 2%;
+    font-weight: bold;
+    color: blue;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: medium;
+}
+
+.dotted {border: 3px solid white; border-style: none none solid; color: #fff; background-color: #fff; }
+
+.searchDiv{
+    margin-left: 5%;
+}
+
+ol li span.spanClass{
+    font-size: medium;
+    color: blue;
+    font-weight: bold;
+}
+
+.SlableClass{
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.h2Class{
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.btnClass{
+    font-weight: bold;
+    font-size: medium;
+    width: 300px;
+}
+
+.txtClass{
+    color: black !important;
+}

@@ -1,0 +1,109 @@
+        <section>
+            <h1>Show Detail</h1>
+            <div>
+                <ul class="leftnav">
+                    <li><span class="lableClass">Name: </span><span class="valueClass">{{showData.name}}</span></li>
+                    <li><span class="lableClass">Type: </span><span class="valueClass">{{showData.type}}</span></li>
+                    <li><span class="lableClass">Language: </span><span class="valueClass">{{showData.language}}</span></li>
+                    <li><span class="lableClass">Genres: </span>
+                        <ol>
+                            <li>
+                             {{#each showData.genres}}
+                            <span class="valueClass">{{this}}</span>
+                            {{/each}}
+                            </li>                           
+                            
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Status: </span><span class="valueClass">{{showData.status}}</span></li>
+                    <li><span class="lableClass">Runtime: </span><span class="valueClass">{{showData.runtime}}</span></li>
+                    <li><span class="lableClass">Premiered: </span><span class="valueClass">{{showData.premiered}}</span></li>
+                    <li><span class="lableClass">Official Site: </span><span class="valueClass">{{showData.officialSite}}</span></li>
+                    <li><span class="lableClass">Schedule Time: </span><span class="valueClass">{{showData.schedule.time}}</span></li>
+                    <li><span class="lableClass">Schedule Days: </span>
+                        <ol>
+                            {{#each showData.schedule.days}}
+                            <li> 
+                                <div>
+                                    <span class="valueClass">{{this}}</span>
+                                </div> 
+                            </li>
+                            {{/each}}
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Rating: </span>
+                        <ol>
+                            {{#each showData.rating}}
+                            <li>
+                                <div>
+                                    <span class="valueClass">{{this}}</span>
+                                </div>
+                            </li>
+                              {{/each}}
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Weight: </span><span class="valueClass">{{showData.weight}}</span></li>
+                    <li><span class="lableClass">Network Id: </span><span class="valueClass">{{showData.network.id}}</span></li>
+                    <li><span class="lableClass">Network Name: </span><span class="valueClass">{{showData.network.name}}</span></li>
+                    <li><span class="lableClass">Network Country: </span>
+                        <ol>
+                            {{#each showData.network.country}}
+                            <li>
+                                    <div>
+                                        <span class="valueClass">{{this}}</span>
+                                    </div>
+                            </li>
+                            {{/each}}
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Web Channel: </span><span class="valueClass">{{showData.webChannel}}</span></li>
+                    <li><span class="lableClass">Externals: </span>
+                        <ol>
+                            {{#each showData.externals}}
+                            <li>
+                                    <div>
+                                    <span class="valueClass">{{this}}</span>
+                                    </div>
+                           </li>          
+                           {{/each}}                  
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Image: </span>
+                        <ol>
+                            {{#each showData.image}}
+                            <li>
+                                    <img src="{{this}}" alt="show img">
+                            </li>
+                            {{/each}}
+                            
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Summary: </span><span class="valueClass">{{{showData.summary}}}</span></li>
+                    <li><span class="lableClass">Updated: </span><span class="valueClass">{{showData.updated}}</span></li>
+                    <li><span class="lableClass">Links Self: </span>
+                        <ol>
+                            {{#each showData._links.self}}
+                                <li>
+                                        <div>
+                                        <span class="valueClass">{{this}}</span>
+                                        </div>
+                                </li>
+                             {{/each}}
+                        </ol>
+                    </li>
+                    <li><span class="lableClass">Links Previouepisode: </span>
+                        <ol>
+                             {{#each showData._links.previousepisode}}
+                            <li>
+                                    <div>
+                                    <span class="valueClass">{{this}}</span>
+                                    </div>
+                            </li>
+                            {{/each}}
+
+                        </ol>
+                    </li>
+                </ul>
+
+            </div>
+        </section>

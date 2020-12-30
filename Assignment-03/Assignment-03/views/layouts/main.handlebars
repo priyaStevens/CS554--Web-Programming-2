@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="/public/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="search">
+<form class="searchDiv" id="searchForm" name="searchForm" method="POST" action="/search">
+<label for="search" class="SlableClass">
+    Serach Item :
+    <input type="text" class="txtClass" placeholder="Enter Search.." name="search" id="search">
+</label>
+  {{!-- <button class="btn btn-secondary btn-sm" type="submit" onclick="validate(event)">Search</button> --}}
+  <button class="btn btn-secondary btn-md" type="submit">Search</button>
+  <div id="errorDiv" class ="errorDiv" hidden></div>
+</form>
+</div>
+{{{body}}}
+
+<script src="../../public/validation.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    
+
+</body>
+</html> 

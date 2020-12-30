@@ -1,0 +1,118 @@
+<section>
+    <h1>Serach Detail</h1>
+<ol>
+    {{#each searchData}}
+<ul class="leftnav">
+    
+        <li><span class="lablesearchClass">Score: </span><span class="valueSearchClass">{{this.score}}</span></li>
+        <li><span class="lablesearchClass">Name: </span><span class="valueSearchClass">{{this.show.name}}</span></li>
+        <li><span class="lablesearchClass">Type: </span><span class="valueSearchClass">{{this.show.type}}</span></li>
+        <li><span class="lablesearchClass">Language: </span><span class="valueSearchClass">{{this.show.show.language}}</span></li>
+        <li><span class="lablesearchClass">Genres: </span>
+            <ol>
+                {{#each this.show.genres}}
+                <li>
+                <span class="valueSearchClass">{{this}}</span></li>
+                {{/each}}
+                
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Status: </span><span class="valueSearchClass">{{this.show.status}}</span></li>
+        <li><span class="lablesearchClass">Runtime: </span><span class="valueSearchClass">{{this.show.runtime}}</span></li>
+        <li><span class="lablesearchClass">Premiered: </span><span class="valueSearchClass">{{this.show.premiered}}</span></li>
+        <li><span class="lablesearchClass">Official Site: </span><span class="valueSearchClass">{{this.show.officialSite}}</span></li>
+        <li><span class="lablesearchClass">Schedule Time: </span><span class="valueSearchClass">{{this.show.schedule.time}}</span</li>
+        <li><span class="lablesearchClass">Schedule Days: </span>
+            <ol>
+                {{#each this.show.schedule.days}}
+                <li> 
+                    <div>
+                        <span class="valueSearchClass">{{this}}</span>
+                    </div> 
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Rating: </span>
+            <ol>
+                {{#each this.show.rating}}
+                <li>
+                    <div>
+                        <span class="valueSearchClass">{{this}}</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Weight: </span><span class="valueSearchClass">{{this.show.weight}}</span</li>
+        <li><span class="lablesearchClass">Network Id: </span><span class="valueSearchClass">{{this.show.network.id}}</span</li>
+        <li><span class="lablesearchClass">Network Name: </span><span class="valueSearchClass">{{this.show.network.name}}</span></li>
+        <li><span class="lablesearchClass">Network Country: </span>
+            <ol>
+                {{#each this.show.network.country}}
+                <li>
+                    <div>
+                        <span class="valueSearchClass">{{this}}</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Web Channel: </span><span class="valueSearchClass">{{this.show.webChannel}}</span</li>
+        <li><span class="lablesearchClass">Externals: </span>
+            <ol>
+                {{#each this.show.externals}}
+                <li>
+                    <div>
+                    <span class="valueSearchClass">{{this}}</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Image: </span>
+            <ol>
+                {{#each this.show.image}}
+                <li>
+                    <div>
+                    <span class="valueSearchClass">{{this}}</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Summary: </span><span class="valueSearchClass">{{{this.show.summary}}}</span</li>
+        <li><span class="lablesearchClass">Updated: </span><span class="valueSearchClass">{{this.show.updated}}</span</li>
+        <li><span class="lablesearchClass">Links Self: </span>
+            <ol>
+                {{#each this.show._links.self}}
+                    <li>
+                        <div>
+                        <span class="valueSearchClass">{{this}}</span>
+                        </div>
+                    </li>
+                {{/each}}
+            </ol>
+        </li>
+        <li><span class="lablesearchClass">Links Previouepisode: </span>
+            <ol>
+                {{#each this.show._links.previousepisode}}
+                <li>
+                    <div>
+                    <span class="valueSearchClass">{{this}}</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </li>
+        </br>
+        <hr class='dotted' />
+        </br>
+        </ul>
+
+
+   
+</ul>
+ {{/each}}
+</ol>
+</section>

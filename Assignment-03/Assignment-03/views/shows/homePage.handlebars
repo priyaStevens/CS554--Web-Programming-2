@@ -1,0 +1,11 @@
+<section>
+  <h1>Shows List</h1>
+  {{#each shows}}  
+   <article class="shows">
+     <h2>
+       <a href="/show/{{{this.id}}}" aria-label="show List">{{this.name}}</a>
+      {{!-- <div class="h2Class"><a href="/show/{{{this.id}}}">{{this.name}}</a></div> --}}
+      </h2>
+    </article>
+  {{/each}}
+</section>
